@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.tagline {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  
+}
+.heading{
+  margin-top: 50px;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.25rem;
+  color: #34495e;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 18px;
+  margin-top: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.cart-list {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  color: #aaa;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}
+.pay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 242, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 255, 0.5);
+}
+
+.payment-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.payment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-container label {
+  font-weight: 600;
+}
+
+.payment-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.payment-container button {
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-container button:hover {
+  background: #2980b9;
+}
+
+.confirmation {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: green;
+  text-align: center;
+}
+.payment-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
+.payment-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.payment-card h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #34495e;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd6dd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.flex-group {
+  display: flex;
+  gap: 16px;
+}
+
+.pay-now {
+  margin-top: 20px;
+  padding: 14px;
+  width: 100%;
+  font-size: 1rem;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-now:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.confirmation-message {
+  font-size: 1.2rem;
+  color: #2ecc71;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+

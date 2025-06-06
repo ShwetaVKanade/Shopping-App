@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Payment - TrendCart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="payment-wrapper">
+    <div class="payment-card">
+      <h2>🔐 Secure Payment</h2>
+      <form id="paymentForm">
+        <div class="input-group">
+          <label>Full Name</label>
+          <input type="text" required />
+        </div>
+        <div class="input-group">
+          <label>Card Number</label>
+          <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" required />
+        </div>
+        <div class="flex-group">
+          <div class="input-group">
+            <label>Expiry</label>
+            <input type="month" required />
+          </div>
+          <div class="input-group">
+            <label>CVV</label>
+            <input type="text" maxlength="3" required />
+          </div>
+        </div>
+        <button type="submit" class="pay-now">💳 Pay Now</button>
+      </form>
+      <p id="confirmationMessage" class="confirmation-message"></p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("paymentForm");
+    const message = document.getElementById("confirmationMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      form.style.display = "none";
+      message.innerHTML = "🎉 <strong>Order Placed!</strong> Thank you for shopping with <b>TrendCart</b>.";
+    });
+  </script>
+</body>
+</html>
