@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [View Demo on GitHub Pages](https://shwetavkanade.github.io/trendcart-shopping-app/)  
+🔗 [View Demo]( https://shwetavkanade.github.io/Shopping-App/)  
 ---
 
 ## 📦 Features
